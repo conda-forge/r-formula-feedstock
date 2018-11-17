@@ -14,9 +14,8 @@ Summary: Infrastructure for extended formulas with multiple parts on the right-h
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-formula-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-formula-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-formula-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-formula-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-formula-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-formula-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-formula-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-formula-feedstock)
 
 Current release info
 ====================
