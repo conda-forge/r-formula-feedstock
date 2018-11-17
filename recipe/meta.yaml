@@ -14,9 +14,9 @@ source:
   sha256: 1411349b20bd09611a9fd0ee6d15f780c758ad2b0e490e908facb49433823872
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,8 +40,7 @@ about:
   summary: Infrastructure for extended formulas with multiple parts on the right-hand side and/or
     multiple responses on the left-hand side (see <DOI:10.18637/jss.v034.i01>).
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
