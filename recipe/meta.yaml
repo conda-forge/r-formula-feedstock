@@ -1,4 +1,4 @@
-{% set version = '1.2-3' %}
+{% set version = "1.2-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: Formula_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/Formula_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Formula/Formula_{{ version }}.tar.gz
-  sha256: 1411349b20bd09611a9fd0ee6d15f780c758ad2b0e490e908facb49433823872
+  sha256: cb70e373b5ed2fc8450937fb3321d37dfd22dcc6f07cb872a419d51205125caf
 
 build:
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1003
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,18 +35,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=Formula
-  license: GPL-2 | GPL-3
-  summary: Infrastructure for extended formulas with multiple parts on the right-hand side and/or
-    multiple responses on the left-hand side (see <DOI:10.18637/jss.v034.i01>).
+  license: GPL-2.0-or-later
+  summary: Infrastructure for extended formulas with multiple parts on the right-hand side and/or multiple responses on the left-hand side (see <DOI:10.18637/jss.v034.i01>).
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
