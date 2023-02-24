@@ -1,4 +1,4 @@
-{% set version = "1.2-4" %}
+{% set version = "1.2-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Formula_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Formula/Formula_{{ version }}.tar.gz
-  sha256: cb70e373b5ed2fc8450937fb3321d37dfd22dcc6f07cb872a419d51205125caf
+  sha256: 86254674600d64e18b65d52f42d7ebfc217c8e1945cb63ac06da22cbf04d355c
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
