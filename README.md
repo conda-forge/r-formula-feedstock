@@ -1,11 +1,11 @@
-About r-formula
-===============
+About r-formula-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-formula-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=Formula
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-formula-feedstock/blob/main/LICENSE.txt)
 
 Summary: Infrastructure for extended formulas with multiple parts on the right-hand side and/or multiple responses on the left-hand side (see <DOI:10.18637/jss.v034.i01>).
 
