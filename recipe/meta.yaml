@@ -3,7 +3,7 @@
 
 package:
   name: r-formula
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -32,7 +32,7 @@ test:
     - "\"%R%\" -e \"library('Formula')\""  # [win]
 
 about:
-  home: https://CRAN.R-project.org/package=Formula
+  home: https://zeileis.codeberg.page/Formula/
   license: GPL-2.0-or-later
   summary: Infrastructure for extended formulas with multiple parts on the right-hand side and/or multiple responses on the left-hand side (see <DOI:10.18637/jss.v034.i01>).
   license_family: GPL3
